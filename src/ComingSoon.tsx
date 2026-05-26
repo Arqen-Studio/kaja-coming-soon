@@ -106,9 +106,8 @@ const socialLinks = [
 
 export default function ComingSoon() {
   return (
-    <div style={{
+    <div className="kaja-page-root" style={{
       position: "relative",
-      height: "100vh",
       width: "100%",
       overflow: "hidden",
       backgroundColor: "#32341D",
@@ -167,7 +166,7 @@ export default function ComingSoon() {
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        padding: "clamp(16px, 3vw, 40px) clamp(20px, 6vw, 80px)",
+        padding: "clamp(16px, 3vw, 40px) clamp(20px, 6vw, 80px)", // overridden by .kaja-content-wrap on mobile
       }}>
 
         {/* Header */}
@@ -203,7 +202,7 @@ export default function ComingSoon() {
             <motion.p
               initial={{ opacity: 0, y: -8 }} animate={{ opacity: 0.5, y: 0 }}
               transition={{ duration: 0.9, delay: 0.7 }}
-              style={{ fontFamily: "Moche, sans-serif", fontWeight: 300, fontSize: "clamp(9px, 1vw, 12px)", letterSpacing: "0.38em", color: "#D6B283", textTransform: "uppercase" }}
+              style={{ fontFamily: "Moche, sans-serif", fontWeight: 500, fontSize: "clamp(9px, 1vw, 12px)", letterSpacing: "0.38em", color: "#D6B283", textTransform: "uppercase" }}
             >
               An extraordinary experience is arriving
             </motion.p>
