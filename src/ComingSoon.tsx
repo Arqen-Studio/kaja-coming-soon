@@ -209,7 +209,7 @@ export default function ComingSoon() {
             </motion.p>
 
             {/* Heading */}
-            <div style={{ overflow: "hidden" }}>
+            <div style={{ overflow: "hidden", padding: "0.1em 0 0.15em" }}>
               <motion.h1
                 initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.1, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
