@@ -143,13 +143,13 @@ export default function ComingSoon() {
       </motion.div>
 
       {/* KAJA letters — full-page background */}
-      <div aria-hidden style={{ position: "absolute", inset: 0, zIndex: 1, overflow: "hidden", pointerEvents: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div aria-hidden className="kaja-bg-letter-grid" style={{ position: "absolute", inset: 0, zIndex: 1, overflow: "hidden", pointerEvents: "none" }}>
         {kajaLetters.map((letter, index) => (
           <motion.img
             key={index}
             src={letter.dark}
             alt=""
-            className={`kaja-bg-letter${letter.label === "J" ? " kaja-bg-letter--j" : ""}`}
+            className={`kaja-bg-letter${letter.label === "J" ? " kaja-bg-letter-j" : ""}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.07 }}
             transition={{ duration: 2, ease: [0.22, 1, 0.36, 1], delay: 0.5 + index * 0.18 }}
@@ -213,7 +213,8 @@ export default function ComingSoon() {
               <motion.h1
                 initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.1, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
-                style={{ fontFamily: "Moche, sans-serif", fontWeight: 200, fontSize: "clamp(28px, 5.5vw, 100px)", lineHeight: 0.95, color: "#FCF7F5", letterSpacing: "-0.01em", margin: 0 }}
+                className="heading-responsive"
+                style={{}}
               >
                 Cooking Something Exciting
               </motion.h1>

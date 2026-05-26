@@ -39,27 +39,49 @@ body {
   font-weight: 300;
 }
 
+.kaja-bg-letter-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .kaja-bg-letter {
   flex: 1;
   min-width: 0;
-  width: 25%;
-  height: 55%;
+  display: block;
+  height: clamp(92px, 24vw, 440px);
+  width: 100%;
   object-fit: contain;
-  object-position: center;
+  padding: 0 16px; /* px-4 */
 }
 
-.kaja-bg-letter--j {
-  flex: 1;
+@media (min-width: 640px) {
+  .kaja-bg-letter {
+    padding: 0 3vw; /* px-[3vw] */
+  }
 }
 
-@media (max-width: 1024px) {
-  .kaja-bg-letter--j { flex: 1.4; }
+.heading-responsive {
+  font-family: "Moche", sans-serif;
+  font-weight: 200;
+  line-height: 0.95;
+  color: #FCF7F5;
+  letter-spacing: -0.01em;
+  margin: 0;
+  font-size: clamp(28px, 5.5vw, 100px);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
-  .kaja-bg-letter--j { flex: 1.9; }
+  .heading-responsive {
+    font-size: clamp(20px, 7.5vw, 60px);
+    max-width: 90vw;
+  }
 }
 
 @media (max-width: 480px) {
-  .kaja-bg-letter--j { flex: 2.6; }
+  .heading-responsive { font-size: clamp(16px, 7vw, 40px); }
 }
