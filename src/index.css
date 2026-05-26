@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Moche";
+  src:
+    local("Moche Light"),
+    url("/fonts/Moche-Light.woff2") format("woff2"),
+    url("/fonts/Moche-Light.woff") format("woff");
+  font-weight: 200 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moche";
+  src:
+    local("Moche"),
+    url("/fonts/Moche-Regular.woff2") format("woff2"),
+    url("/fonts/Moche-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #32341D;
+  color: #FCF7F5;
+  font-family: "Moche", sans-serif;
+  font-weight: 300;
+}
+
+.kaja-bg-letter {
+  flex: 1;
+  min-width: 0;
+  width: 25%;
+  height: 55%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.kaja-bg-letter--j {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .kaja-bg-letter--j { flex: 1.4; }
+}
+
+@media (max-width: 768px) {
+  .kaja-bg-letter--j { flex: 1.9; }
+}
+
+@media (max-width: 480px) {
+  .kaja-bg-letter--j { flex: 2.6; }
+}
