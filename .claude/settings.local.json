@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" --headless=new --screenshot=\"C:\\\\Users\\\\Hp\\\\kaja-coming-soon\\\\screenshot.png\" --window-size=1440,900 --disable-gpu \"http://localhost:5173\"; Start-Sleep -Seconds 4; Test-Path \"C:\\\\Users\\\\Hp\\\\kaja-coming-soon\\\\screenshot.png\")"
-    ]
-  }
-}
