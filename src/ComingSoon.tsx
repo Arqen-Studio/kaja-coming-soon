@@ -178,7 +178,7 @@ export default function ComingSoon() {
         >
           <div />
           <img src="/svg/logo-dark.svg" alt="KAJA" style={{ width: "clamp(40px, 4.5vw, 60px)" }} />
-          <p style={{ fontFamily: "Moche, sans-serif", fontWeight: 300, fontSize: "11px", letterSpacing: "0.3em", color: "#D6B283", opacity: 0.45, textTransform: "uppercase", textAlign: "right" }}>
+          <p style={{ fontFamily: "Moche, sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.3em", color: "#D6B283", opacity: 0.45, textTransform: "uppercase", textAlign: "right" }}>
             Ubud · Bali
           </p>
         </motion.header>
