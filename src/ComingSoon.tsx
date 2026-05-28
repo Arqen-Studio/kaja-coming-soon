@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import HeroMask from "./HeroMask";
 
-const LAUNCH_DATE = new Date("2026-05-29T00:00:00");
+const LAUNCH_DATE = new Date("2026-06-01T00:00:00");
 
 function getTimeLeft() {
   const diff = LAUNCH_DATE.getTime() - Date.now();
@@ -128,7 +128,7 @@ const socialLinks = [
     icon: FaInstagram,
     label: "Instagram",
     href: "https://www.instagram.com/kajabynuma?igsh=MTh1eHJycTdhaW1jeA==",
-    target :"_blank",
+    target: "_blank",
   },
 ];
 
@@ -268,7 +268,7 @@ export default function ComingSoon() {
         >
           <div />
           <img
-            src="/svg/logo-dark.svg"
+            src="/svg/KAJA LOGO WHITE.svg"
             alt="KAJA"
             style={{ width: "clamp(40px, 4.5vw, 60px)" }}
           />
@@ -380,7 +380,7 @@ export default function ComingSoon() {
                 lineHeight: 1,
               }}
             >
-              29 May 2026
+              1st June 2026
             </motion.p>
 
             {/* Description */}
