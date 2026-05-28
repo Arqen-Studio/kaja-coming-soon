@@ -270,7 +270,7 @@ export default function ComingSoon() {
           <img
             src="/svg/KAJA LOGO WHITE.svg"
             alt="KAJA"
-            style={{ width: "clamp(40px, 6vw, 60px)" }}
+            style={{ width: "clamp(40px, 6.5vw, 80px)" }}
           />
           <p
             style={{
