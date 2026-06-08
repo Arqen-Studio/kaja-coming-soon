@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import HeroMask from "./HeroMask";
 
-const LAUNCH_DATE = new Date("2026-06-04T00:00:00");
+const LAUNCH_DATE = new Date("2026-06-11T00:00:00");
 
 function getTimeLeft() {
   const diff = LAUNCH_DATE.getTime() - Date.now();
@@ -380,7 +380,7 @@ export default function ComingSoon() {
                 lineHeight: 1,
               }}
             >
-              4th June 2026
+              11th June 2026
             </motion.p>
 
             {/* Description */}
